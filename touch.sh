@@ -11,7 +11,10 @@ read age
 if [ $sal -lt 10000 ];
 then
 	echo "no tax"
-elif [ $sal -ge 1000 ] && [ $sal -lt 25000 ];
+elif [ $sal -eq 1000 ];
+then
+	echo "2% tax"
+elif [ $sal -gt 1000 ] && [ $sal -lt 25000 ];
 then
 	echo "5% tax"
 elif [ $sal -ge 25000 ]
